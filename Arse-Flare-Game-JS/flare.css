@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("./WEMBLEY.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+   min-height: 100vh;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+   
+    
+}
+#game{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+   
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+
+#character{
+    height: 95px;
+    width: 90px;
+    background: url(./guy-removebg-preview.jpg);
+    background-size: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    top: 515px;
+    position: relative;
+    margin-left: 10px;
+}
+.animate{
+    animation: jump 500ms ;
+}
+#block{
+    top: 500px;
+    position: relative;
+    height: 300px;
+    width: 120px;
+    background: url("file:///C:/Users/EmmaB/Downloads/flare-pubicdomainvectors.svg");
+    background-size: cover;
+    margin-left: 680px;
+    animation: block 1s infinite;
+}
+@keyframes block{
+    0%{left:480px;}
+    100%{left:-700px;}
+}
+@keyframes jump{
+    0%{top: 515px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 515px;}
+}
